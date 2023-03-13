@@ -1,10 +1,16 @@
-# PetHelp!
-
-#### Description:
+# <a name='PetHelp!'></a>PetHelp!
 
 ### General Description:
 
 This project was developed to help vet's keep their medical history from their patients. In this web app, vet's will be able to create new pets with all the information they need and then submit information about that pet every time they need it.
+
+## <a name='Table of Contents'></a>Table of Contents
+
+* [Instructions](#Instructions)
+* [How to run](#HowToRun)
+* [How to use](#HowToUse)
+* [Functions](#Functions)
+    *[LogIn](#LogIn)
 
 I used a database with three tables. Each table saves specific information of each user.
 
