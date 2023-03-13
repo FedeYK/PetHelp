@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Apology
+{% endblock %}
+
+{% block main %}
+    <div class="cont_error">
+        {% if number == 0 %}
+            <img alt="{{ top }}" class="border" src="https://api.memegen.link/images/ams/{{ top }}/{{ bottom }}/and_your_parents_walk_in_at_the_sex_scene.png" title="{{ top }}" class="cont_error">
+        {% elif number == 1 %}
+            <img alt="{{ top }}" class="border" src="https://api.memegen.link/images/cheems/{{ top }}/{{ bottom }}/nothing_will_go_wrong_after_this.png" title="{{ top }}" class="cont_error">
+        {% elif number == 2 %}
+            <img alt="{{ top }}" class="border" src="https://api.memegen.link/images/chosen/{{ top }}/{{ bottom }}/you_were_the_chosen_one!.png" title="{{ top }}" class="cont_error">
+        {% elif number == 3 %}
+            <img alt="{{ top }}" class="border" src="https://api.memegen.link/images/disastergirl/{{ top }}/{{ bottom }}/just_as_I_planned....png" title="{{ top }}" class="cont_error">
+        {% endif %}
+    
+    
+    </div>
+    
+{% endblock %}
+

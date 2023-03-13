@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    New Pet!
+{% endblock %}
+
+{% block main %}
+    <div class="contlogreg">
+        <form action="/newpet" method="POST" autocomplete="off">
+
+            <div class="form-group row">
+            <p></p>
+
+                <div class="row justify-content-center">
+                    <div class="col-sm-4">
+                        <input autocomplete="off" autofocus class="form-control" name="petname" placeholder="Pet Name" type="text" required>
+                    </div>
+                </div>
+            <p></p>
+                <div class="row justify-content-center">
+                    <div class="col-sm-4">
+                        <input class="form-control" name="lastname" placeholder="Last Name" type="text" required>
+                    </div>
+                </div>
+            <p></p>
+                <div class="row justify-content-center">
+                    <div class="col-sm-4">
+                        <input class="form-control" name="age" placeholder="Age" type="text" required>
+                    </div>
+                </div>
+            <p></p>
+                <div class="row justify-content-center">
+                    <div class="col-sm-4">
+                        <input class="form-control" name="specie" placeholder="Specie" type="text" required>
+                    </div>
+                </div>
+            </div>
+            <p></p>
+            <div class="row justify-content-center">
+                <div class="col-sm-4">
+                <button class="btn btn-my" type="submit">Create New Pet!!</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+{% endblock %}

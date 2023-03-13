@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+
+    <div class="contlogreg">
+
+        <div class="text-center">
+            <h2>Welcome to PetHelp!<h2>
+            <p><em>Please, complete the form to register</em></p>
+        </div>
+        <p></p>
+        <form action="/register" method="post" autocomplete="off">
+            <div class="row justify-content-center">
+                <div class="col-sm-4 form-group">
+                    <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text" required>
+                </div>
+            </div>
+            <p></p>
+            <div class="row justify-content-center">
+                <div class="col-sm-4 form-group">
+                    <input class="form-control" name="password" placeholder="Password" type="password" required>
+                </div>
+            </div>
+            <p></p>
+            <div class="row justify-content-center">
+                <div class="col-sm-4 form-group">
+                    <input class="form-control" name="confirmation" placeholder="confirmation" type="password" required>
+                </div>
+            </div>
+            <p></p>
+            <div class="row justify-content-center">
+                <div class="col-sm-4">
+                    <button class="btn btn-primary" type="submit">Register!</button>
+                </div>
+            </div>
+        </form>
+    </div>
+{% endblock %}

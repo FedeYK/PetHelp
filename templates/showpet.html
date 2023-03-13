@@ -1,0 +1,86 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Pet
+{% endblock %}
+
+{% block main %}
+
+    <section class="container1">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Lastname</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Specie</th>
+
+
+                </tr>
+            </thead>
+            <tbody>
+
+                {% for pet in pets %}
+                    <tr>
+                            <!-- IMPRIMO LA TABLA DE LAS MASCOTAS QUE TENGO -->
+
+                            <td>{{ pet["name"] }}</td>
+                            <td>{{ pet["lastname"] }}</td>
+                            <td>{{ pet["age"] }}</td>
+                            <td>{{ pet["specie"] }}</td>
+
+
+                    </tr>
+                </tbody>
+        </table>
+
+        <table>
+            <tbody>
+                        <p></p>
+                        <p></p>
+                        <div class="container2">
+                        {% if history is not none %}
+                            <p class="texto1">Pet History:</p>
+
+                                {% for histor in history %}
+
+                                    <tr>{{ histor["date"] }}<form action="/deletehist/{{ histor.histnum }}"><input type="submit" value="Delete History" class="btn btn-my-small btn-sm"></form></tr>
+                                    <p></p>
+                                    <tr>{{ histor["story"] }}</tr>
+                                    <p></p>
+
+
+                                {% endfor %}
+                        {% else %}
+                            <p class="texto1">You have no pet history yet.</p>
+                        {% endif %}
+                        </div>
+
+
+
+                    <tr>
+                            <td>
+                                <div class="container2">
+                                <form action="/{{ pet.pet_num }}" method = "POST">
+                                    <div class="row justify-content-center">
+                                    <div class="col-sm-12">
+                                    <textarea autocomplete="off" autofocus class="form-control" name="history" placeholder="Type new history..." type="text" style="height:80px" required></textarea>
+                                    </div>
+                                    </div>
+                                    <input type="submit" value="Add History" class="btn btn-my">
+                                </form>
+                                </div>
+                            </td>
+                    </tr>
+                {% endfor %}
+
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+
+
+{% endblock %}

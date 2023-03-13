@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    HISTORY
+{% endblock %}
+
+{% block main %}
+
+    <section class="container1">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Lastname</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Specie</th>
+                    <th scope="col">Action</th>
+
+                </tr>
+            </thead>
+            <tbody>
+
+                {% for pet in pets %}
+                    <tr>
+                            <!-- IMPRIMO LA TABLA DE LAS MASCOTAS QUE TENGO -->
+
+                            <td>{{ pet["name"] }}</td>
+                            <td>{{ pet["lastname"] }}</td>
+                            <td>{{ pet["age"] }}</td>
+                            <td>{{ pet["specie"] }}</td>
+                            <td><form action="/{{ pet.pet_num }}"><input id="view" type="submit" value="View" class="btn btn-my"></form></td>
+                            <td><form action="/deletepet/{{ pet.pet_num }}"><input id="delete" type="submit" value="Delete" class="btn btn-my"></form></td>
+
+                    </tr>
+                {% endfor %}
+
+
+            </tbody>
+        </table>
+
+        <!--
+        <p></p>
+        <p></p>
+        {% if history is not none %}
+            <p class="texto1">Pet History:</p>
+
+                {% for histor in history %}
+
+                    <p>{{ histor["date"] }}</p>
+                    <p>{{ histor["story"] }}</p>
+
+
+                {% endfor %}
+        {% else %}
+            <p class="texto1">You have no pet history yet.</p>
+        {% endif %}
+        -->
+
+    </section>
+
+
+
+{% endblock %}

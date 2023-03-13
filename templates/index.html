@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+
+    <section class="container1 text-center">
+        <figure>
+            <h1 class="titulo">Welcome to PetHelp!</h1>
+            <p class="texto1">We are here to help you.</p>
+            <p class="texto1">Being a vet is difficult and emotional, you need to keep your pets data organized.</p>
+            <p class="texto1">You must stay focused so that you can concentrate in the important things.</p>
+            <p class="texto1">Using PetHelp! will be your best solution!</p>
+            {% if not session.user_id %}
+            <p class="texto1">Log In or Register to start!</p>
+            {% endif %}
+        </figure>
+
+        {% if session.user_id %}
+        <p></p>
+        <a class="btn btn-my" href="/mypets" role="button">My Pets</a>
+        <a class="btn btn-my" href="/newpet" role="button">New Pet</a>
+
+        {% endif %}
+    </section>
+
+
+
+
+{% endblock %}
