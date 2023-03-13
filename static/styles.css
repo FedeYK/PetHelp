@@ -1,0 +1,115 @@
+/*  FONTS
+
+font-family: 'Lato', sans-serif;
+font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+
+.container{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container1 {
+    width: 100vw;
+    height: 100vh;
+    background-color: #A491D3;
+    margin: 0;
+    margin-right: 0;
+    padding: 0;
+    padding-bottom: 10vh;
+
+}
+
+.cont_error {
+    width: 100vw;
+    height: 100vh;
+    background-color: #A491D3;
+    margin: 0;
+    margin-right: 0;
+    padding: 0;
+    padding-bottom: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container2 {
+    position: relative;
+    width: 100vw;
+    background-color: #A491D3;
+    margin: 0;
+    margin-right: 0;
+    padding: 0;
+    padding-bottom: 10vh;
+
+}
+
+
+.contfooter
+{
+    background-color: #A491D3;
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    bottom: 0;
+}
+
+.contlogreg
+{
+    background-color: #A491D3;
+    width: 100vw;
+    height: 80vh;
+}
+
+.titulo
+{
+    color: #08415C;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+
+.texto1
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+.btn-my
+{
+    background-color: #F9DAD0;
+}
+
+.btn-my-small
+{
+    background-color: #F9DAD0;
+}
+
+/*colores
+
+A491D3 blue bell
+818AA3 cool grey
+C5DCA0 tea green
+F5F2B8 pale sprint bud
+F9DAD0 unbleached silk
+08415C indigo
+*/
+
+
+.title1
+{
+    color: ;
+}
+
+
+/*
+* {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}
+*/
