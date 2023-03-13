@@ -10,7 +10,7 @@ This project was developed to help vet's keep their medical history from their p
 * [How to run](#HowToRun)
 * [How to use](#HowToUse)
 * [Functions](#Functions)
-    *[LogIn](#LogIn)
+  *[LogIn](#LogIn)
 
 I used a database with three tables. Each table saves specific information of each user.
 
