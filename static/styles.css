@@ -16,18 +16,21 @@ font-family: 'Roboto', sans-serif;
 .container1 {
     width: 100vw;
     height: 100vh;
-    background-color: #A491D3;
+    /* background-color: #A491D3; */
+    background-color: #b3dee2;
     margin: 0;
     margin-right: 0;
     padding: 0;
     padding-bottom: 10vh;
+    
 
 }
 
 .cont_error {
     width: 100vw;
     height: 100vh;
-    background-color: #A491D3;
+    /* background-color: #A491D3; */
+    background-color: #b3dee2;
     margin: 0;
     margin-right: 0;
     padding: 0;
@@ -41,7 +44,8 @@ font-family: 'Roboto', sans-serif;
 .container2 {
     position: relative;
     width: 100vw;
-    background-color: #A491D3;
+    /* background-color: #A491D3; */
+    background-color: #b3dee2;
     margin: 0;
     margin-right: 0;
     padding: 0;
@@ -52,7 +56,8 @@ font-family: 'Roboto', sans-serif;
 
 .contfooter
 {
-    background-color: #A491D3;
+    /* background-color: #A491D3; */
+    background-color: #b3dee2;
     width: 100vw;
     height: 10vh;
     position: fixed;
@@ -61,16 +66,18 @@ font-family: 'Roboto', sans-serif;
 
 .contlogreg
 {
-    background-color: #A491D3;
+    /* background-color: #A491D3; */
+    background-color: #b3dee2;
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
 }
 
 .titulo
 {
-    color: #08415C;
+    /* color: #08415C; */
+    color: #364958;
     font-family: 'Roboto', sans-serif;
-    font-size: 30px;
+    /* font-size: 30px; */
 }
 
 .texto1

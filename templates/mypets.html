@@ -1,20 +1,22 @@
 {% extends "layout.html" %}
 
 {% block title %}
-    HISTORY
+PetHelp! - My Pets
 {% endblock %}
 
 {% block main %}
-
+    
     <section class="container1">
-        <table class="table">
+        <br>
+        <table class="table table-striped table-bordered border-secondary">
             <thead>
                 <tr>
                     <th scope="col">Name</th>
                     <th scope="col">Lastname</th>
                     <th scope="col">Age</th>
                     <th scope="col">Specie</th>
-                    <th scope="col">Action</th>
+                    <th scope="col">View</th>
+                    <th scope="col">Delete</th>
 
                 </tr>
             </thead>
@@ -22,7 +24,7 @@
 
                 {% for pet in pets %}
                     <tr>
-                            <!-- IMPRIMO LA TABLA DE LAS MASCOTAS QUE TENGO -->
+                            <!-- Print the pets that this user has as a table  -->
 
                             <td>{{ pet["name"] }}</td>
                             <td>{{ pet["lastname"] }}</td>
@@ -34,9 +36,12 @@
                     </tr>
                 {% endfor %}
 
-
             </tbody>
         </table>
+
+        <div class="container">
+            <a class="btn btn-my" href="/newpet" role="button">New Pet</a>
+        </div>
 
         <!--
         <p></p>

@@ -1,10 +1,11 @@
 {% extends "layout.html" %}
 
 {% block title %}
-    New Pet!
+PetHelp! - New Pet!
 {% endblock %}
 
 {% block main %}
+<section>
     <div class="contlogreg">
         <form action="/newpet" method="POST" autocomplete="off">
 
@@ -44,4 +45,5 @@
 
         </form>
     </div>
+</section>
 {% endblock %}
