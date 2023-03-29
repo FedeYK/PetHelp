@@ -44,7 +44,7 @@ PetHelp! - Pet History
 
                                 {% for histor in history %}
 
-                                    <tr>{{ histor["date"] }}<form action="/deletehist/{{ histor.histnum }}"><input type="submit" value="Delete History" class="btn btn-my-small btn-sm"></form></tr>
+                                    <tr>{{ histor["date"] }}      <form action="/deletehist/{{ histor.histnum }}"><input type="submit" value="Delete History" class="btn btn-my-small btn-sm"></form></tr>
                                     <p></p>
                                     <tr>{{ histor["story"] }}</tr>
                                     <p></p>
