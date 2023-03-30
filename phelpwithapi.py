@@ -47,7 +47,6 @@ def load_data(path):
     Returns: The 'result' key of the JSON response.
     """
     result = requests.get(path, headers=headers).json()
-    print(result)
     return result['result']
 
 def delete_data(path):
