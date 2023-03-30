@@ -36,30 +36,9 @@ Session(app)
 # To connect with the api 
 ip_api = "https://apiph-dot-capstone-376415.oa.r.appspot.com/api/ph/v1"
 
-# In this case, we are connecting to a cloud database
-# Database Data
-ip_fede = "34.175.221.108"
-user = "root"
-passw = "aioria"
-host = "34.175.221.108"
-database = "main"
 
 # Define the API key
 headers = {'x-api-key': 'APP2023'}
-
-# Connect to the database
-def connect():
-    """
-    Creates a database connection using the given parameters and returns the connection object.
-    Returns:
-        conn: The database connection object.
-    """
-    db = create_engine(
-    'mysql+pymysql://{0}:{1}@{2}/{3}' \
-        .format(user, passw, host, database), \
-    connect_args = {'connect_timeout': 10})
-    conn = db.connect()
-    return conn
 
 def load_data(path):
     """
